@@ -71,7 +71,7 @@ jQuery(document).ready(function() {
 
  var onloadCallback = function() {
         grecaptcha.render('html_element', {    // oncallback render a div with id html_element
-          'sitekey' : '6Lc1CEMUAAAAADxvB2vR6rxjD4D2T2EyVJmgkKUS', // sitekey for the  captcha 
+          'sitekey' : '6LfcOEcUAAAAAAia1cMp60bnm1PMaFrmJ808il_D', // sitekey for the  captcha 
           'theme' : 'light',           // change the theme for light and dark
           'widgetId': 'widgetId',      // add widget id attribute which is optional
           callback(){
