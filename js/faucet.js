@@ -24,14 +24,16 @@ function sendXRK(){
     
     jQuery.post("../rk-faucet/php/send.php", { "address": address})
         .done(function(data) {
-            if(data.success){
-                console.log("Transaction ID",data.result);
+            if(data.result){
+                console.log("Transaction ID", data.result);
+                localStorage.lasttx   = Math.round(+new Date()/1000);
                 jQuery('#address').val('');
                 swal({
+                    title:'Transaction successfully sent',
+                    html: '<a target="_blank" href="'+txUrl+data.result+'">'+data.result+'</a>',
                     type: 'success',
-                    title: data.result,
                     showConfirmButton: false,
-                    timer: 1500
+                    timer: 15000
                   })
             }
             else{
@@ -42,7 +44,7 @@ function sendXRK(){
                     type: 'error',
                     title: 'Please try again!',
                     showConfirmButton: false,
-                    timer: 1500
+                    timer: 15000
                   })
             }
 
@@ -50,13 +52,21 @@ function sendXRK(){
             
 }
 jQuery(document).ready(function() {
+
+    txUrl = "http://35.170.155.89:2750/RecordsKeeper%20Testnet/tx/";
+    localStorage.lasttx = 0;
+
     document.getElementById('send').addEventListener('click', function(e) {
         address = jQuery('#address').val();
+        console.log("last value",localStorage.lasttx);
+        var diff = Math.round(+new Date()/1000) - localStorage.lasttx;
         if(address!=''){
-            sendXRK();
+            if((localStorage.lasttx == 0 || diff >= 43200))
+                sendXRK();
         }      
         else{
-            $('#address').css('border', '1px solid #ea2121')
+            $('#address').css('border', '1px solid #ea2121');
+            console.log(diff);
         } 
     });
 });
