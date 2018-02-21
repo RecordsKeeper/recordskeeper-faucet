@@ -1,3 +1,25 @@
+
+/////////////////////////////////
+   // Recordskeeper Faucet 	  //
+  // Shuchi Tyagi			 //
+ // Toshblocks innovations  //
+/////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+$(document).ready(function(){
+		 // Animate loader off screen
+		   $(".se-pre-con").fadeOut("slow");  // fadeout the preloader
+
+});
+
+
+
+
+
+
+
 function sendXRK(){
     
     jQuery.post("../rk-faucet/php/send.php", { "address": address})
