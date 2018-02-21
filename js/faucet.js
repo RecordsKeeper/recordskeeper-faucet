@@ -58,7 +58,6 @@ jQuery(document).ready(function() {
 
     document.getElementById('send').addEventListener('click', function(e) {
         address = jQuery('#address').val();
-        console.log("last value",localStorage.lasttx);
         var diff = Math.round(+new Date()/1000) - localStorage.lasttx;
         if(address!=''){
             if((localStorage.lasttx == 0 || diff >= 43200))
