@@ -62,14 +62,22 @@ jQuery(document).ready(function() {
 
         var diff = Math.round(+new Date()/1000) - localStorage.lasttx;
 
-        if(captchaSuccess == undefined){
-        	$("#html_element").css('border', '1px solid #ea2121')
-        }
+       
 
+        if(address ==''){
+            $("#html_element").css('border', '1px solid #ea2121')
+        }    
+         if(captchaSuccess == undefined){
+        	$("#html_element").css('border', '1px solid #ea2121')
+        }  
         if(address!=''){
+        	$('#address').css('border', 'none');
+        }
+         if(address!='' && captchaSuccess == 'success'){
+         	$("#html_element").css('border', 'none')
             if((localStorage.lasttx == 0 || diff >= 43200))
                 sendXRK();
-        }      
+        }   
         else{
             $('#address').css('border', '1px solid #ea2121');
             console.log(diff);
