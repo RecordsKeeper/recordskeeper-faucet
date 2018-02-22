@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 function sendXRK(){
     
-    jQuery.post("../rk-faucet/php/send.php", { "address": address})
+    jQuery.post("../php/send.php", { "address": address})
         .done(function(data) {
             if(data.result){
                 console.log("Transaction ID", data.result);
@@ -95,11 +95,9 @@ jQuery(document).ready(function() {
                      
                     },
                       function(response, status){   // pass two parameters respnse  and status 
-                           console.log("response after ssv : ", response, status); 
 
                            if ( status == 'success'){
                              captchaSuccess = status;
-                            console.log("captchaSuccess :", captchaSuccess);
                             
 
                            }
