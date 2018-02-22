@@ -14,7 +14,8 @@ $(document).ready(function(){
 
 });
 
-
+var captchaSuccess;
+ console.log("captchaSuccess :", captchaSuccess);
 
 
 
@@ -58,7 +59,13 @@ jQuery(document).ready(function() {
 
     document.getElementById('send').addEventListener('click', function(e) {
         address = jQuery('#address').val();
+
         var diff = Math.round(+new Date()/1000) - localStorage.lasttx;
+
+        if(captchaSuccess == undefined){
+        	$("#html_element").css('border', '1px solid #ea2121')
+        }
+
         if(address!=''){
             if((localStorage.lasttx == 0 || diff >= 43200))
                 sendXRK();
