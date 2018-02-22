@@ -1,5 +1,4 @@
 <?php
-
 return array(
     'rk_user' => 'rkuser',
     'rk_pass' => 'rkpass',

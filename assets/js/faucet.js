@@ -23,15 +23,15 @@ var captchaSuccess;
 
 function sendXRK(){
     
-    jQuery.post("../php/send.php", { "address": address})
+    jQuery.post("../../src/send.php", { "address": address})
         .done(function(data) {
             if(data.result){
                 console.log("Transaction ID", data.result);
                 localStorage.lasttx   = Math.round(+new Date()/1000);
                 jQuery('#address').val('');
                 swal({
-                    title:'Transaction successfully sent',
-                    html: '<a target="_blank" href="'+txUrl+data.result+'">'+data.result+'</a>',
+                    title:'Sent 10 XRK',
+                    html: '<b>Check Transaction status here:</b> <a target="_blank" href="'+txUrl+data.result+'">'+data.result+'</a>',
                     type: 'success',
                     showConfirmButton: false,
                     timer: 15000
@@ -96,7 +96,7 @@ jQuery(document).ready(function() {
             console.log('response from google : ', response);
           
             // send post method to captcha php that is usin curl post request for cross domain
-             $.post("captcha.php",
+             $.post("../../src/captcha.php",
                     {
                       googleResponse: response     // pass the google response
                      
