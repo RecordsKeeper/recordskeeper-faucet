@@ -26,9 +26,86 @@
     outline: none;
     outline-offset: -2px;
 }
-
+.bodyHeadText{
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: black;
+}
+.bodyDetails{
+    font-size: 15px;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.waysHeading{
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    color: black;
+}
+.indexed{
+    margin-left: 27rem;
+    font-size: 13px;
+}
 .faucetcontainer{
-	margin-top : 10%;
+	margin-top : 5%;
+}
+.footer{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+.footerHeading{
+    text-align: center;
+}
+.links{
+    margin-top: 5rem;
+}
+#web{
+    float: left;
+    font-size: 12px;
+    
+    font-weight: 500;
+}
+.blog{
+     font-size: 12px;
+    
+    /* text-align: center; */
+    /*margin-left: 8rem;*/
+    font-weight: 500;
+}
+.testExplorer{
+     font-size: 12px;
+    
+    /* text-align: center; */
+    /*margin-left: 8rem;*/
+    font-weight: 500;
+}
+.mainExplorer{
+     font-size: 12px;
+    
+    /* text-align: center; */
+    /*margin-left: 8rem;*/
+    font-weight: 500;
+}
+.demo{
+    font-size: 12px;
+    
+    /* text-align: center; */
+    /*margin-left: 8rem;*/
+    font-weight: 500;
+}
+.stats{
+    font-size: 12px;
+    
+    font-weight: 500;
+    /*float: right;*/
+}
+#toWallet{
+    margin: auto;
+    display: block;
+    margin-top: 6px;
+    background: #22283a;
+    color: white;
 }
 #togglecontlabel{
 	font-size: 15px;
@@ -72,5 +149,5 @@ body, textarea, input, select, option, button {
 		#nav {
 		    right: 20px;
 		}
-
+       
 }

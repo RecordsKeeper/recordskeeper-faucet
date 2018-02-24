@@ -54,7 +54,7 @@ function sendXRK(){
 }
 jQuery(document).ready(function() {
 
-    txUrl = "http://35.170.155.89:2750/RecordsKeeper%20Testnet/tx/";
+    txUrl = expUrl;
     localStorage.lasttx = 0;
 
     document.getElementById('send').addEventListener('click', function(e) {
@@ -75,7 +75,7 @@ jQuery(document).ready(function() {
         }
          if(address!='' && captchaSuccess == 'success'){
          	$("#html_element").css('border', 'none')
-            if((localStorage.lasttx == 0 || diff >= 43200))
+            if((localStorage.lasttx == 0 || diff >= timed))
                 sendXRK();
         }   
         else{
@@ -84,7 +84,6 @@ jQuery(document).ready(function() {
         } 
     });
 });
-
 
 
 

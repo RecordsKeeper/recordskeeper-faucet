@@ -15,4 +15,3 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
 $response = curl_exec($ch);
 var_export ($response);
 // echo $response;
-?>
