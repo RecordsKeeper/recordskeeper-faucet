@@ -49,7 +49,7 @@ $config = include('./src/config.php');
     
     <div class="container faucetcontainer">
       <div class="bodyHeadText text-center">RecordsKeeper (XRK) Testnet Faucet</div>
-    <div class="bodyDetails text-center">This faucet drips fifty RecordsKeeper Testnet XRK in your wallet.<br> These testnet XRK can be used for development and testing process over RecordsKeeper Blockchain (Testnet).</div>
+    <div class="bodyDetails text-center">This faucet drips three RecordsKeeper Testnet XRK in your wallet.<br> These testnet XRK can be used for development and testing process over RecordsKeeper Blockchain (Testnet).</div>
     <div class="waysHeading text-center">
       How to get the RecordsKeeper Testnet XRK?</div>
       <ol>
@@ -84,15 +84,15 @@ $config = include('./src/config.php');
 ">
     <div class="footer">
       <div class="footerHeading">Don't have a wallet???</div>
-      <button id="toWallet" class="btn btn-default" type="button" onclick="https://wallet.recordskeeper.co">Click here</button>
+      <button id="toWallet" class="btn btn-default" type="button" onclick="window.location.href='http://wallet.recordskeeper.co'">Click here</button>
     </div>
 <div class="links col-lg-offset-2 col-lg-8">
        <a id="web" href="https://recordskeeper.co">Website</a>
-       <a class="blog col-lg-offset-1" href="https://recordskeeper.co">Blog</a>
+       <a class="blog col-lg-offset-1" href="https://www.recordskeeper.co/blog/">Blog</a>
        <a class="testExplorer col-lg-offset-1" href="https://test-exp.recordskeeper.co">Testnet Explorer</a>
-       <a class="mainExplorer col-lg-offset-1" href="https://main-exp.recordskeeper.co">Mainnet Explorer</a>
-       <a class="demo col-lg-offset-1" href="https://demo.recordskeeper.co">Demo</a>
-       <a class="stats col-lg-offset-1" href="https:/stats.recordskeeper.co">Blockchain Statistcs</a>
+       <a class="mainExplorer col-lg-offset-1" href="http://exp.recordskeeper.co/">Mainnet Explorer</a>
+       <a class="demo col-lg-offset-1" href="http://demo.recordskeeper.co">Demos</a>
+       <a class="stats col-lg-offset-1" href="http:/test-stats.recordskeeper.co">Blockchain Statistcs</a>
     </div>
 
     <!-- Bootstrap core JavaScript -->
