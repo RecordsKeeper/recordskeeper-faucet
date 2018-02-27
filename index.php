@@ -92,7 +92,7 @@ $config = include('./src/config.php');
        <a class="testExplorer col-lg-offset-1" href="https://test-exp.recordskeeper.co">Testnet Explorer</a>
        <a class="mainExplorer col-lg-offset-1" href="http://exp.recordskeeper.co/">Mainnet Explorer</a>
        <a class="demo col-lg-offset-1" href="http://demo.recordskeeper.co">Demos</a>
-       <a class="stats col-lg-offset-1" href="http:/test-stats.recordskeeper.co">Blockchain Statistcs</a>
+       <a class="stats col-lg-offset-1" href="http:/stats.recordskeeper.co">Blockchain Statistcs</a>
     </div>
 
     <!-- Bootstrap core JavaScript -->
