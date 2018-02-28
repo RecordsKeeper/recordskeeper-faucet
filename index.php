@@ -11,7 +11,7 @@ $config = include('./src/config.php');
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, target-densitydpi=device-dpi">
+  <meta name="viewport" content="width=device-width, initial-scale=1, target-densitydpi=device-dpi">
     <title>Faucet - Recordskeeper</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
 
@@ -21,39 +21,38 @@ $config = include('./src/config.php');
     <script type= "text/javascript">
     var expUrl = "<?php echo $config['exp_url'] ?>";
     var timed = <?php echo $config['time'] ?>;
-    var tokenQuant = <?php echo $config['token_quant'] ?>;
     </script>
   </head>
 
   <body>
   <!-- prelaoder spins here -->
-  	<div class="se-pre-con"></div>
+    <div class="se-pre-con"></div>
   <!-- prelaoder spins here -->
 
  <!-- header here  -->
-   			<header id="top">
-				<p id="logo">
-					<img src="assets/images/logo.png">
-				</p>
-				<nav id="skip">
-					
-				</nav>
-				<nav id="nav">
-					<ul>
-						<label id="togglecontlabel">TestNetwork</label>
-					</ul>	
-				</nav>
-			</header>
+        <header id="top">
+        <p id="logo">
+          <img class="img-responsive img-align" src="assets/images/logo.png">
+        </p>
+        <nav id="skip">
+          
+        </nav>
+        <nav id="nav">
+          <ul>
+            <label id="togglecontlabel">TestNetwork</label>
+          </ul> 
+        </nav>
+      </header>
 <!-- header ends here  -->
-
+<div class="clearfix"></div>
     <!-- Page Content -->
     
     <div class="container faucetcontainer">
       <div class="bodyHeadText text-center">RecordsKeeper (XRK) Testnet Faucet</div>
-    <div class="bodyDetails text-center">This faucet drips <?php echo $config['token_quant'] ?> RecordsKeeper Testnet XRK in your wallet.<br> These testnet XRK can be used for development and testing process over RecordsKeeper Blockchain (Testnet).</div>
+    <div class="bodyDetails text-center">This faucet drips three RecordsKeeper Testnet XRK in your wallet.<br> These testnet XRK can be used for development and testing process over RecordsKeeper Blockchain (Testnet).</div>
     <div class="waysHeading text-center">
       How to get the RecordsKeeper Testnet XRK?</div>
-      <ol>
+      <ol id="align-setting">
 <li class= "indexed"> First, you need a RecordsKeeper testnet wallet Address! If you don't have one, please <a href="https://wallet.recordskeeper.co" target="_blank">click here</a> to create.</li>
 <li class= "indexed"> Enter the test wallet Address over here and recieve 3 testnet XRK!</li>
 <li class= "indexed"> Use it in your development to publish your records in RecordsKeeper's Blockchain (Testnet)!</li>
@@ -87,13 +86,24 @@ $config = include('./src/config.php');
       <div class="footerHeading">Don't have a wallet???</div>
       <button id="toWallet" class="btn btn-default" type="button" onclick="window.location.href='http://wallet.recordskeeper.co'">Click here</button>
     </div>
-<div class="links col-lg-offset-2 col-lg-8">
-       <a id="web" href="https://recordskeeper.co">Website</a>
-       <a class="blog col-lg-offset-1" href="https://www.recordskeeper.co/blog/" target="_blank">Blog</a>
-       <a class="testExplorer col-lg-offset-1" href="https://test-exp.recordskeeper.co" target="_blank">Testnet Explorer</a>
-       <a class="mainExplorer col-lg-offset-1" href="http://exp.recordskeeper.co/" target="_blank">Mainnet Explorer</a>
-       <a class="demo col-lg-offset-1" href="http://demo.recordskeeper.co" target="_blank">Demos</a>
-       <a class="stats col-lg-offset-1" href="http:/stats.recordskeeper.co" target="_blank">Blockchain Statistcs</a>
+
+<div id="buttons"> 
+<ul class="link-style">
+  <li><a id="web" href="https://recordskeeper.co">Website</a></li>
+  <li> <a class="blog" href="https://www.recordskeeper.co/blog/" target="_blank">Blog</a></li>
+  <li><a class="testExplorer" href="https://test-exp.recordskeeper.co" target="_blank">Testnet Explorer</a></li>
+  <li><a class="mainExplorer" href="http://exp.recordskeeper.co/" target="_blank">Mainnet Explorer</a></li>
+  <li><a class="demo" href="http://demo.recordskeeper.co" target="_blank">Demos</a></li>
+  <li><a class="stats" href="http:/stats.recordskeeper.co" target="_blank">Blockchain Statistcs</a></li>
+</ul>
+</div>
+
+       
+      
+       
+       
+       
+       
     </div>
 
     <!-- Bootstrap core JavaScript -->

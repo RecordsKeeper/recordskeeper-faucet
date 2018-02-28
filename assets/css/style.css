@@ -9,7 +9,7 @@
 }
 
 #logo img{
-	    width: 275px;
+        width: 275px;
     margin-top: 7px;
     margin-left: 15px;
 }
@@ -47,7 +47,7 @@
     font-size: 13px;
 }
 .faucetcontainer{
-	margin-top : 5%;
+    margin-top : 5%;
 }
 .footer{
     font-size: 16px;
@@ -60,46 +60,7 @@
 .links{
     margin-top: 5rem;
 }
-#web{
-    float: left;
-    font-size: 12px;
-    
-    font-weight: 500;
-}
-.blog{
-     font-size: 12px;
-    
-    /* text-align: center; */
-    /*margin-left: 8rem;*/
-    font-weight: 500;
-}
-.testExplorer{
-     font-size: 12px;
-    
-    /* text-align: center; */
-    /*margin-left: 8rem;*/
-    font-weight: 500;
-}
-.mainExplorer{
-     font-size: 12px;
-    
-    /* text-align: center; */
-    /*margin-left: 8rem;*/
-    font-weight: 500;
-}
-.demo{
-    font-size: 12px;
-    
-    /* text-align: center; */
-    /*margin-left: 8rem;*/
-    font-weight: 500;
-}
-.stats{
-    font-size: 12px;
-    
-    font-weight: 500;
-    /*float: right;*/
-}
+
 #toWallet{
     margin: auto;
     display: block;
@@ -108,7 +69,7 @@
     color: white;
 }
 #togglecontlabel{
-	font-size: 15px;
+    font-size: 15px;
     font-weight: 400;
     margin-top:15px;
 }
@@ -134,20 +95,151 @@ body, textarea, input, select, option, button {
 }
 
 #send{
-	    background: #22283a;
+        background: #22283a;
     color: white;
 }
 #html_element{
-	margin-top: 15px;
+    margin-top: 15px;
     width: 304px;
+}
+
+#buttons{
+    float:right;
+    position:relative;
+    left:-50%;
+    text-align:left;
+}
+#buttons ul{
+    list-style:none;
+    position:relative;
+    left:50%;
+}
+
+#buttons li{float:left;position:relative;}/* ie needs position:relative here*/
+
+#buttons a{
+    text-decoration:none;
+    margin:10px;
+   
+    float:left;
+   font-size: 15px;
+
+    padding:2px 5px;
+    text-align:center;
+    white-space:nowrap;
 }
 
 
 
+@media only screen and (max-width: 1024px) and (min-width: 320px)  {
+.indexed {
+     margin-left: 0px; 
+    
+}
+/*.faucetcontainer {
+    margin-top: 19%;
+}*/
+.links a {
+    padding-right: 5px;
+}
+.bodyHeadText {
+    font-size: 3.5rem;
+}
 
-@media only screen and (max-width: 93.75em)
-		#nav {
-		    right: 20px;
-		}
-       
+}
+
+
+@media only screen and (max-width: 991px) and (min-width: 767px)  {
+
+#align-setting {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 48px;
+}
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 992px){
+#align-setting {
+
+    margin-left: 132px;
+}
+
+
+}
+
+
+@media only screen and (max-width: 1199px) and (min-width: 1025px){
+#align-setting {
+
+    margin-left: -136PX;
+}
+
+
+}
+
+
+@media only screen and (max-width: 400px) and (min-width: 320px)  {
+
+.faucetcontainer {
+    margin-top: 18%;
+
+}
+
+}
+    
+
+
+@media only screen and (max-width: 600px) and (min-width: 401px)  {
+
+.faucetcontainer {
+    margin-top: 13%;
+}
+
+}
+
+@media only screen and (max-width: 991px) and (min-width: 601px)  {
+
+.faucetcontainer {
+    margin-top: 10%;
+}
+
+}
+
+@media only screen and (min-width: 992px)  {
+
+.faucetcontainer {
+    margin-top: 7%;
+}
+
+}
+
+@media only screen and (max-width: 450px) and (min-width: 320px)  {
+#nav {
+    position: absolute;
+    top: 0;
+    right: 7px;
+    bottom: 0;
+}
+
+#logo img {
+    width: 214px;
+    margin-top: 7px;
+    margin-left: 15px;
+}
+
+
+@media only screen and (max-width: 707px) and (min-width: 320px)  {
+#buttons {
+     float: none; 
+     left: -59%;
+  
+}
+#buttons li {
+     float: none; 
+  
+}
+#buttons a {
+  float: none;
+}
 }
