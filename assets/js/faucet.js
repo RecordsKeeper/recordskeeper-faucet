@@ -15,10 +15,6 @@ $(document).ready(function(){
 });
 
 var captchaSuccess;
- console.log("captchaSuccess :", captchaSuccess);
-
-
-
 
 
 function sendXRK(){
@@ -26,24 +22,31 @@ function sendXRK(){
     jQuery.post("../../src/send.php", { "address": address})
         .done(function(data) {
             if(data.result){
-                console.log("Transaction ID", data.result);
                 localStorage.lasttx   = Math.round(+new Date()/1000);
                 jQuery('#address').val('');
                 swal({
-                    title:'Sent 10 XRK',
+                    title:'Sent '+tokenQuant+' XRK',
                     html: '<b>Check Transaction status here:</b> <a target="_blank" href="'+txUrl+data.result+'">'+data.result+'</a>',
                     type: 'success',
                     showConfirmButton: false,
                     timer: 15000
                   })
             }
-            else{
-                console.log("Could not process request");
-                console.log(data);
+            else if(data.error){
                 jQuery('#address').val('');
                 swal({
                     type: 'error',
-                    title: 'Please try again!',
+                    title: data.error.message,
+                    showConfirmButton: false,
+                    timer: 15000
+                  })
+            }
+            else{
+                console.log("data",data);
+                jQuery('#address').val('');
+                swal({
+                    type: 'error',
+                    title: data.message,
                     showConfirmButton: false,
                     timer: 15000
                   })
@@ -80,7 +83,6 @@ jQuery(document).ready(function() {
         }   
         else{
             $('#address').css('border', '1px solid #ea2121');
-            console.log(diff);
         } 
     });
 });
@@ -98,9 +100,7 @@ jQuery(document).ready(function() {
           'theme' : 'light',           // change the theme for light and dark
           'widgetId': 'widgetId',      // add widget id attribute which is optional
           callback(){
-            console.log( 'another callback function here');
             var response = grecaptcha.getResponse();    // get the value of response when user submits recaptcha
-            console.log('response from google : ', response);
           
             // send post method to captcha php that is usin curl post request for cross domain
              $.post("../../src/captcha.php",
