@@ -54,7 +54,7 @@ $config = include('./src/config.php');
       How to get the RecordsKeeper Testnet XRK?</div>
       <ol>
 <li class= "indexed"> First, you need a RecordsKeeper testnet wallet Address! If you don't have one, please <a href="https://wallet.recordskeeper.co" target="_blank">click here</a> to create.</li>
-<li class= "indexed"> Enter the test wallet Address over here and recieve 50 testnet XRK!</li>
+<li class= "indexed"> Enter the test wallet Address over here and recieve 3 testnet XRK!</li>
 <li class= "indexed"> Use it in your development to publish your records in RecordsKeeper's Blockchain (Testnet)!</li>
 <li class= "indexed"> You can get another shot of Testnet XRK once again after 12 hours only!</li>
       </ol>
@@ -88,11 +88,11 @@ $config = include('./src/config.php');
     </div>
 <div class="links col-lg-offset-2 col-lg-8">
        <a id="web" href="https://recordskeeper.co">Website</a>
-       <a class="blog col-lg-offset-1" href="https://www.recordskeeper.co/blog/">Blog</a>
-       <a class="testExplorer col-lg-offset-1" href="https://test-exp.recordskeeper.co">Testnet Explorer</a>
-       <a class="mainExplorer col-lg-offset-1" href="http://exp.recordskeeper.co/">Mainnet Explorer</a>
-       <a class="demo col-lg-offset-1" href="http://demo.recordskeeper.co">Demos</a>
-       <a class="stats col-lg-offset-1" href="http:/stats.recordskeeper.co">Blockchain Statistcs</a>
+       <a class="blog col-lg-offset-1" href="https://www.recordskeeper.co/blog/" target="_blank">Blog</a>
+       <a class="testExplorer col-lg-offset-1" href="https://test-exp.recordskeeper.co" target="_blank">Testnet Explorer</a>
+       <a class="mainExplorer col-lg-offset-1" href="http://exp.recordskeeper.co/" target="_blank">Mainnet Explorer</a>
+       <a class="demo col-lg-offset-1" href="http://demo.recordskeeper.co" target="_blank">Demos</a>
+       <a class="stats col-lg-offset-1" href="http:/stats.recordskeeper.co" target="_blank">Blockchain Statistcs</a>
     </div>
 
     <!-- Bootstrap core JavaScript -->
