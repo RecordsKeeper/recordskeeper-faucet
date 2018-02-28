@@ -7,8 +7,8 @@ $tokenQuant = $config['token_quant'];
 $address = $_REQUEST['address'];
     
     try{
-        $errors = validStrLen($address, 34, 34);
-        if(!$errors) {
+        $isValid = validStrLen($address);
+        if($isValid) {
         
             $curl = curl_init();
 
@@ -42,7 +42,7 @@ $address = $_REQUEST['address'];
             header('Content-Type: application/json');
             $data = '{"message": "Address length not valid"}';
             echo $data;
-            error_log("ERROR: Address length not valid");
+            error_log("ERROR: Invalid Address");
         }
         
     }
@@ -50,14 +50,12 @@ $address = $_REQUEST['address'];
         error_log("ERROR: could not connect to recordskeeper". $e->getMessage());
     }
 
-function validStrLen($str, $min, $max){
+function validStrLen($str){
     $len = strlen($str);
-    if($len < $min){
-        return "Field Name is too short, minimum is $min characters ($max max)";
+    if($len != 34){
+        return FALSE;
+    }else{
+        return TRUE;
     }
-    elseif($len > $max){
-        return "Field Name is too long, maximum is $max characters ($min min).";
-    }
-    return TRUE;
 }    
 ?>

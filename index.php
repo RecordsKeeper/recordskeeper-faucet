@@ -21,6 +21,7 @@ $config = include('./src/config.php');
     <script type= "text/javascript">
     var expUrl = "<?php echo $config['exp_url'] ?>";
     var timed = <?php echo $config['time'] ?>;
+    var tokenQuant = <?php echo $config['token_quant'] ?>;
     </script>
   </head>
 
@@ -49,7 +50,7 @@ $config = include('./src/config.php');
     
     <div class="container faucetcontainer">
       <div class="bodyHeadText text-center">RecordsKeeper (XRK) Testnet Faucet</div>
-    <div class="bodyDetails text-center">This faucet drips three RecordsKeeper Testnet XRK in your wallet.<br> These testnet XRK can be used for development and testing process over RecordsKeeper Blockchain (Testnet).</div>
+    <div class="bodyDetails text-center">This faucet drips <?php echo $config['token_quant'] ?> RecordsKeeper Testnet XRK in your wallet.<br> These testnet XRK can be used for development and testing process over RecordsKeeper Blockchain (Testnet).</div>
     <div class="waysHeading text-center">
       How to get the RecordsKeeper Testnet XRK?</div>
       <ol>
