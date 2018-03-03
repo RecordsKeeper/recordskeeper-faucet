@@ -76,7 +76,7 @@ $config = include('./src/config.php');
     </div>
 <hr class="hrwallet">
     <div class="footer ">
-      <div class="footerHeading">Don't have a wallet???</div>
+      <div class="footerHeading">Don't have a wallet??? </div>
       <button id="toWallet" class="btn btn-default" type="button" onclick="window.location.href='http://wallet.recordskeeper.co'">Click here</button>
     </div>
 
