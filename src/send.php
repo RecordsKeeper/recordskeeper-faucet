@@ -52,7 +52,7 @@ $address = $_REQUEST['address'];
 
 function validStrLen($str){
     $len = strlen($str);
-    if($len != 34){
+    if($len != 38){
         return FALSE;
     }else{
         return TRUE;
