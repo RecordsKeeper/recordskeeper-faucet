@@ -27,14 +27,18 @@
     outline-offset: -2px;
 }
 .bodyHeadText{
-    font-size: 4.5rem;
+    font-size: 20px;
     font-weight: 700;
     color: black;
 }
+ol#align-setting {
+    margin-bottom: 25px;
+}
 .bodyDetails{
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
+    line-height: 21px;
 }
 .waysHeading{
     font-size: 17px;
@@ -45,6 +49,7 @@
 .indexed{
     margin-left: 27rem;
     font-size: 13px;
+        line-height: 20px;
 }
 .faucetcontainer{
     margin-top : 5%;
@@ -55,23 +60,54 @@
     color: black;
 }
 .footerHeading{
-    text-align: center;
+    
+        text-align: center;
+    color: #22293a;
 }
 .links{
     margin-top: 5rem;
 }
 
 #toWallet{
-    margin: auto;
+        margin: auto;
     display: block;
-    margin-top: 6px;
+    margin-top: 20px;
     background: #22283a;
     color: white;
+    width: 150px;
+
+}
+ul.link-style {
+    list-style-type: none;
+}
+ul.link-style li {
+    float: left;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 12px;
+}
+.footerdiv{
+    text-align: center;
+    width: 36%;
+    /* background: black; */
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 35px;
 }
 #togglecontlabel{
     font-size: 15px;
     font-weight: 400;
     margin-top:15px;
+}
+.hrwallet{
+        color: #929598;
+    /* border-style: inset; */
+    margin-top: 8rem;
+    /* border: 1px solid #7e90a3; */
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 body {
     min-height: 100%;
@@ -95,12 +131,15 @@ body, textarea, input, select, option, button {
 }
 
 #send{
-        background: #22283a;
+           background: #22283a;
     color: white;
+    height: 35px;
+    border-radius: 4px;
 }
 #html_element{
-    margin-top: 15px;
-    width: 304px;
+       width: 304px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 #buttons{
@@ -128,118 +167,43 @@ body, textarea, input, select, option, button {
     text-align:center;
     white-space:nowrap;
 }
+a {
+    color: #8495a7;
+    text-decoration: none;
+}
 
+.faucetcontainer{
+    margin-top: 5.5%;
+}
 
+@media only screen and ( max-width: 940px){
+    .indexed {
+     margin-left: 0rem; 
+    font-size: 13px;
+    line-height: 20px;
+}
+  .faucetcontainer{
+    margin-top: 9%;
+}
 
-@media only screen and (max-width: 1024px) and (min-width: 320px)  {
+}
+
+@media only screen and ( max-width: 640px){
+    .footerdiv {
+    text-align: center;
+    width: 100%;
+    /* background: black; */
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 75px;
+    }
 .indexed {
-     margin-left: 0px; 
-    
+     margin-left: 0rem; 
+    font-size: 13px;
+    line-height: 20px;
 }
-/*.faucetcontainer {
-    margin-top: 19%;
-}*/
-.links a {
-    padding-right: 5px;
-}
-.bodyHeadText {
-    font-size: 3.5rem;
+.faucetcontainer{
+     margin-top: 15%;
 }
 
-}
-
-
-@media only screen and (max-width: 991px) and (min-width: 767px)  {
-
-#align-setting {
-    margin-top: 0;
-    margin-bottom: 10px;
-    margin-left: 48px;
-}
-
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 992px){
-#align-setting {
-
-    margin-left: 132px;
-}
-
-
-}
-
-
-@media only screen and (max-width: 1199px) and (min-width: 1025px){
-#align-setting {
-
-    margin-left: -136PX;
-}
-
-
-}
-
-
-@media only screen and (max-width: 400px) and (min-width: 320px)  {
-
-.faucetcontainer {
-    margin-top: 18%;
-
-}
-
-}
-    
-
-
-@media only screen and (max-width: 600px) and (min-width: 401px)  {
-
-.faucetcontainer {
-    margin-top: 13%;
-}
-
-}
-
-@media only screen and (max-width: 991px) and (min-width: 601px)  {
-
-.faucetcontainer {
-    margin-top: 10%;
-}
-
-}
-
-@media only screen and (min-width: 992px)  {
-
-.faucetcontainer {
-    margin-top: 7%;
-}
-
-}
-
-@media only screen and (max-width: 450px) and (min-width: 320px)  {
-#nav {
-    position: absolute;
-    top: 0;
-    right: 7px;
-    bottom: 0;
-}
-
-#logo img {
-    width: 214px;
-    margin-top: 7px;
-    margin-left: 15px;
-}
-
-
-@media only screen and (max-width: 707px) and (min-width: 320px)  {
-#buttons {
-     float: none; 
-     left: -59%;
-  
-}
-#buttons li {
-     float: none; 
-  
-}
-#buttons a {
-  float: none;
-}
 }

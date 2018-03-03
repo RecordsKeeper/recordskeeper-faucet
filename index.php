@@ -38,9 +38,9 @@ $config = include('./src/config.php');
           
         </nav>
         <nav id="nav">
-          <ul>
+         <!--  <ul>
             <label id="togglecontlabel">TestNetwork</label>
-          </ul> 
+          </ul>  -->
         </nav>
       </header>
 <!-- header ends here  -->
@@ -69,25 +69,18 @@ $config = include('./src/config.php');
           </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->
         <div class="row">
-            <div class="col-lg-offset-4 col-lg-6">
+            <div class="">
                 <div id="html_element"></div>
             </div>
         </div>
     </div>
-<hr style="
-    border-width: 1px;
-    color:  black;
-    border-style:  inset;
-    margin-left: 15rem;
-    margin-right: 15rem;
-    margin-top: 3rem;
-">
-    <div class="footer">
+<hr class="hrwallet">
+    <div class="footer ">
       <div class="footerHeading">Don't have a wallet???</div>
       <button id="toWallet" class="btn btn-default" type="button" onclick="window.location.href='http://wallet.recordskeeper.co'">Click here</button>
     </div>
 
-<div id="buttons"> 
+<div id="" class="footerdiv"> 
 <ul class="link-style">
   <li><a id="web" href="https://recordskeeper.co">Website</a></li>
   <li> <a class="blog" href="https://www.recordskeeper.co/blog/" target="_blank">Blog</a></li>
