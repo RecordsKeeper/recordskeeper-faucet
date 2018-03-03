@@ -86,13 +86,14 @@ ul.link-style li {
     margin-right: 6px;
     font-size: 12px;
 }
-.footerdiv{
+.footerdiv {
     text-align: center;
-    width: 36%;
+    width: 38%;
     /* background: black; */
     margin: 0 auto;
     margin-top: 55px;
     margin-bottom: 35px;
+    height: 50px;
 }
 #togglecontlabel{
     font-size: 15px;
@@ -100,14 +101,14 @@ ul.link-style li {
     margin-top:15px;
     
 }
-.hrwallet{
-        color: #929598;
+.hrwallet {
+    color: #929598;
     /* border-style: inset; */
     margin-top: 8rem;
     /* border: 1px solid #7e90a3; */
     width: 90%;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 140px;
     margin-bottom: 30px;
 }
 body {
@@ -206,5 +207,16 @@ a {
 .faucetcontainer{
      margin-top: 15%;
 }
+.hrwallet {
+
+    margin-top: 50px;
+
+}
+
+
+
+
+
+
 
 }
