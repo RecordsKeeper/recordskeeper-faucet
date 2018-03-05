@@ -13,6 +13,7 @@ function sendXRK(){
         .done(function(data) {
             // reset captcha
             grecaptcha.reset();
+            captchaSuccess = undefined;
 
             if(data.txnID){
                 jQuery('#address').val('');
