@@ -70,7 +70,7 @@ $response = null;
 
         } else {
             header('Content-Type: application/json');
-            $data = '{"txnID": null, "message": "Address length not valid", "error": 1}';
+            $data = '{"txnID": null, "message": "Invalid address", "error": 1}';
             echo $data;
             error_log("ERROR: Invalid Address length");
         }

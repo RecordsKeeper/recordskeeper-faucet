@@ -8,6 +8,10 @@ var captchaSuccess;
 
 
 function sendXRK(){
+
+    // watch address
+    jQuery.post("../../src/importAddress.php", { "address": address})
+        .done(function(data) {});
     
     jQuery.post("../../src/send.php", { "address": address})
         .done(function(data) {
