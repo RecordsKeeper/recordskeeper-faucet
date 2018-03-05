@@ -1,13 +1,3 @@
-
-/////////////////////////////////
-   // Recordskeeper Faucet 	  //
-  // Shuchi Tyagi			 //
- // Toshblocks innovations  //
-/////////////////////////////
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 $(document).ready(function(){
 		 // Animate loader off screen
 		   $(".se-pre-con").fadeOut("slow");  // fadeout the preloader
@@ -21,33 +11,35 @@ function sendXRK(){
     
     jQuery.post("../../src/send.php", { "address": address})
         .done(function(data) {
-            if(data.result){
-                localStorage.lasttx   = Math.round(+new Date()/1000);
+            // reset captcha
+            grecaptcha.reset();
+
+            if(data.txnID){
                 jQuery('#address').val('');
                 swal({
-                    title:'Sent '+tokenQuant+' XRK',
-                    html: '<b>Check Transaction status here:</b> <a target="_blank" href="'+txUrl+data.result+'">'+data.result+'</a>',
+                    title:'Sent '+tokenQuantity+' XRK',
+                    html: '<b>Check Transaction status here:</b> <a target="_blank" href="'+txUrl+data.txnID+'">'+data.txnID+'</a>',
                     type: 'success',
-                    showConfirmButton: false,
+                    showConfirmButton: true,
                     timer: 15000
                   })
             }
             else if(data.error){
-                jQuery('#address').val('');
+                //jQuery('#address').val('');
                 swal({
                     type: 'error',
-                    title: data.error.message,
-                    showConfirmButton: false,
+                    title: data.message,
+                    showConfirmButton: true,
                     timer: 15000
                   })
             }
             else{
                 console.log("data",data);
-                jQuery('#address').val('');
+                //jQuery('#address').val('');
                 swal({
                     type: 'error',
                     title: data.message,
-                    showConfirmButton: false,
+                    showConfirmButton: true,
                     timer: 15000
                   })
             }
@@ -58,14 +50,9 @@ function sendXRK(){
 jQuery(document).ready(function() {
 
     txUrl = expUrl;
-    localStorage.lasttx = 0;
 
     document.getElementById('send').addEventListener('click', function(e) {
         address = jQuery('#address').val();
-
-        var diff = Math.round(+new Date()/1000) - localStorage.lasttx;
-
-       
 
         if(address ==''){
             $("#html_element").css('border', '1px solid #ea2121')
@@ -77,14 +64,15 @@ jQuery(document).ready(function() {
         	$('#address').css('border', 'none');
         }
          if(address!='' && captchaSuccess == 'success'){
-         	$("#html_element").css('border', 'none')
-            if((localStorage.lasttx == 0 || diff >= timed))
-                sendXRK();
+         	$("#html_element").css('border', 'none');
+            
+            sendXRK();
         }   
         else{
             $('#address').css('border', '1px solid #ea2121');
         } 
     });
+
 });
 
 

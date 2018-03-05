@@ -1,7 +1,8 @@
 <?php
+$config = include('config.php'); 
 
 $post = [
-   'secret' => '6LfcOEcUAAAAABldSkevRJL75VSrvheVbc_4z9wU',
+   'secret' => $config["captcha_secret"],
    'response' => $_POST['googleResponse'],
    
 ];
@@ -14,4 +15,3 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
 $response = curl_exec($ch);
 var_export ($response);
-// echo $response;

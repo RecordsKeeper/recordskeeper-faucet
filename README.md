@@ -1,1 +1,1 @@
-# rk-faucet
+# recordskeeper-faucet
