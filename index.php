@@ -101,7 +101,13 @@ $config = include('./src/config.php');
   <li><a class="mainExplorer" href="http://explorer.recordskeeper.co/" target="_blank">Mainnet Explorer</a></li>
   <li><a class="demo" href="http://demo.recordskeeper.co" target="_blank">Demos</a></li>
   <li><a class="stats" href="http://stats.recordskeeper.co" target="_blank">Blockchain Statistcs</a></li>
-</ul>
+  <li><a class="stats" href="http://wallet.recordskeeper.co" target="_blank">Wallet</a></li>
+  <li><a class="stats" href="http://stats.recordskeeper.co" target="_blank">Miner Statistcs</a></li>
+  <li><a class="stats" href="http://airdrop.recordskeeper.co" target="_blank">Airdrop</a></li>
+
+
+
+  </ul>
 </div>
 
        
