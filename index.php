@@ -104,6 +104,7 @@ $config = include('./src/config.php');
   <li><a class="stats" href="http://wallet.recordskeeper.co" target="_blank">Wallet</a></li>
   <li><a class="stats" href="http://stats.recordskeeper.co" target="_blank">Miner Statistcs</a></li>
   <li><a class="stats" href="http://airdrop.recordskeeper.co" target="_blank">Airdrop</a></li>
+  <li><a href="https://docs.recordskeeper.co/" target="_blank">Docs</a></li>
 
 
 
