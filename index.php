@@ -87,14 +87,18 @@ $config = include('./src/config.php');
             </div>
         </div>
     </div>
-<hr class="hrwallet">
     <div class="footer ">
       <div class="footerHeading">Don't have a wallet??? </div>
       <button id="toWallet" class="btn btn-default" type="button" onclick="window.open('http://wallet.recordskeeper.co');">Click here</button>
     </div>
+<hr class="hrwallet">
+    
 
 <div id="" class="footerdiv"> 
 <ul class="link-style">
+    <li>&copy; RecordsKeeper @<span class="date">2016-2018. All rights reserved</span></li>
+    <li><a href="./" target="_blank">Terms</a></li>
+    <li><a href="./" target="_blank">Privacy Policy</a></li>
   <li><a id="web" href="https://www.recordskeeper.co/" target="_blank">Website</a></li>
   <li> <a class="blog" href="https://www.recordskeeper.co/blog/" target="_blank">Blog</a></li>
   <li><a class="testExplorer" href="http://test-explorer.recordskeeper.co" target="_blank">Testnet Explorer</a></li>
