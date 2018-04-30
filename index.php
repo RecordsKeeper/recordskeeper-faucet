@@ -33,7 +33,7 @@ $config = include('./src/config.php');
  <!-- header here  -->
         <header id="top">
         <p id="logo">
-          <img class="img-responsive img-align" src="assets/images/logo.png">
+          <img class="img-responsive img-align" src="assets/images/logo.svg">
         </p>
         <nav id="skip">
           
